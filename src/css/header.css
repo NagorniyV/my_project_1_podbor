@@ -1,0 +1,76 @@
+header{
+   margin-bottom: 8px;
+background: linear-gradient(to right, #cceeff, #66a3ff);
+/* position: sticky;
+top: 0;
+left: 0; */
+}
+
+.chek-item {
+    padding: 10px 15px;
+    border: 1px solid #4c4e61;
+    border-radius: 4px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.chek-list {
+    display: flex;
+    gap: 5px;
+}
+
+.chek-container{
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: darkred;
+}
+
+.header-container{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.telegram{
+    border: none;
+    border-radius: 4px;
+    background-color: #f4f5f6;
+}
+
+.contact-container{
+    display: flex;
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.chek-item:hover {
+    transform: scale(1.05);
+    /* Увеличение на 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Усиленная тень */
+    z-index: 1;
+    /* Поднимаем над соседями */
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    /* Увеличение на 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Усиленная тень */
+    z-index: 1;
+    /* Поднимаем над соседями */
+}

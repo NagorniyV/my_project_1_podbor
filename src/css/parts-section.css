@@ -1,0 +1,67 @@
+.parts-section{
+    padding: 20px 20px;
+}
+
+.parts-title{
+    margin-bottom: 20px;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 колонки */
+    gap: 20px;
+    /* Расстояние между карточками */
+    padding: 0;
+    list-style: none;
+}
+
+.card-item {
+    display: flex;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    /* Для выравнивания высоты */
+}
+
+.card-image {
+    width: 60px;
+    /* Фиксированная ширина изображения */
+    height: 60px;
+    /* Фиксированная высота изображения */
+    object-fit: cover;
+    /* Сохраняет пропорции, обрезая лишнее */
+    flex-shrink: 0;
+    /* Запрещает уменьшение */
+}
+
+.card-text {
+    padding: 15px;
+    flex-grow: 1;
+    /* Занимает оставшееся пространство */
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    /* Увеличение на 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Усиленная тень */
+    z-index: 1;
+    /* Поднимаем над соседями */
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 колонки на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-list {
+        grid-template-columns: 1fr;
+        /* 1 колонка на телефонах */
+    }
+}
